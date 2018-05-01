@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Show from './Show';
+import {Link} from 'react-router-dom'
+
 
 const MainLandingContainer = styled.div`
 background-color: rgb(21, 141, 165);
@@ -34,7 +37,7 @@ class Landing extends Component {
     return (
         <MainLandingContainer>
           <header className="para" >Bernard's Car Collection</header>
-            <MyButton>Welcome</MyButton>
+          <Link to="/show"><MyButton>Welcome </MyButton></ Link>
       </MainLandingContainer>
     )
   }

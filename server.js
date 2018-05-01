@@ -21,6 +21,10 @@ connection .on('error', (err) => {
     res.sendFile(__dirname + '/client/build/index.html')
   })
 
+    const BrandsController = require('./controllers/brands')
+  app.use('/api/brands', BrandsController)
+  
+
  const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log("Magic happening on port " + PORT);
