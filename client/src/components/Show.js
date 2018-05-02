@@ -2,12 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-
-
-
 class Show extends Component {
     state = {
-      brands:[]
+      brands:[],
     }
 
   componentDidMount() {
@@ -20,19 +17,22 @@ class Show extends Component {
       })
     })
   }
-  
+
   render() {
     console.log("rendered")
     const brander =this.state.brands.map ((brand) => {
     return (
       <div>
+      <Link to={`/show/brand/${brand._id}`}>
       <p>{brand.name}</p>
+      </Link>
       </div>
     )
   })
   return brander
+  
   }
 }
-  
+
 
 export default Show

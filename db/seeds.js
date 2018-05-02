@@ -52,7 +52,7 @@ const fast = new Features({
       year: "2018"
   })
   const mclaren = new Brands({
-    name: 'Mclaren',
+    name: 'McLaren',
     picture: 'spaceiscool'
   })
 

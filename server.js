@@ -23,6 +23,9 @@ connection .on('error', (err) => {
 
     const BrandsController = require('./controllers/brands')
   app.use('/api/brands', BrandsController)
+
+  const modelsController = require('./controllers/models')
+  app.use('/api/models', modelsController)
   
 
  const PORT = process.env.PORT || 3001;

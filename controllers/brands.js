@@ -10,4 +10,12 @@ router.get('/', (req, res) => {
     .catch((err) => console.log(err))
 })
 
+router.get('/:brandId', (req, res) => {
+    Brands.findById(req.params.brandId)
+      .then((brand) => {
+        res.json(brand)
+      })
+      .catch((err) => console.log(err))
+  })
+
 module.exports= router

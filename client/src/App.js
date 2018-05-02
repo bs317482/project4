@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 // import './App.css';
 import Landing from './components/Landing'
 import Show from './components/Show';
+import BrandProfile from './components/BrandProfile';
 // import ShowPage from './components/ShowPage'
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <Switch>
         <Route exact path="/" component={Landing}/>
         <Route exact path="/show" component={Show}/>
+        <Route exact path="/show/brand/:brandId" component={BrandProfile} />
         </Switch>
       </Router>
     );
