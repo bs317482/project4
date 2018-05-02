@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Landing from './components/Landing'
 import Show from './components/Show';
 import BrandProfile from './components/BrandProfile';
-// import ShowPage from './components/ShowPage'
 
 class App extends Component {
   render() {
