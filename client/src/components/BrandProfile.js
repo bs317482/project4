@@ -32,7 +32,9 @@ class BrandProfile extends Component {
             })
             return (
                 <div>
-                    <div>{model.name}</div>
+                    <div>{model.name}
+                    {model.year}
+                    </div>
                     {features}
                 </div>
             )

@@ -14,11 +14,11 @@ const vroom = new Features({
  ]
 })
 const zoom = new Models({
-    name: 'Aventador SV',
-    year: "2018"
+    name: 'Aventador SV-',
+    year: "-2018"
 })
 const lamb = new Brands({
-  name: 'Lamborghini',
+  name: 'Lamborghini 🇮🇹 ',
   picture: 'spaceiscool'
 })
 
@@ -31,8 +31,8 @@ const fast = new Features({
    ]
   })
   const turbo = new Models({
-      name: 'Agera RS',
-      year: "2018"
+      name: 'Agera RS-',
+      year: "-2018"
   })
   const koen = new Brands({
     name: 'Koenigsegg',
@@ -48,8 +48,8 @@ const fast = new Features({
    ]
   })
   const london = new Models({
-      name: 'P1',
-      year: "2018"
+      name: 'P1-',
+      year: "-2018"
   })
   const mclaren = new Brands({
     name: 'McLaren',

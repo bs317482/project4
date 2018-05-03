@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import styled from 'styled-components'
+import NewBrandForm from './NewBrandForm';
 
 const ShowContainer = styled.div`
 background-color: rgb(21, 141, 165);
@@ -28,6 +29,13 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: green;  
 }
 `
+const Head = styled.header`
+text-align: center;
+color: black;
+font-family: Luminari;
+background-color:rgb(21, 141, 165);
+font-size:30px;
+`
 
 class Show extends Component {
     state = {
@@ -45,9 +53,10 @@ class Show extends Component {
     })
   }
 
-  createBrand =() => {
+  // createBrand =() => {
 
-  }
+
+  // }
 
   render() {
     console.log("rendered")
@@ -62,15 +71,20 @@ class Show extends Component {
       </div>
       </ShowContainer>
       </div>
+     
       
 
     )
   })
   return (
     <div>
+        <Head>
+               <header>Custom Car Collection</header>
+               </Head>
+
     {brander}
     <FooterContainer>
-    <footer><MeButton>CREATE YOUR DREAM CAR!</MeButton></footer>
+    <footer><Link to="/NewBrandForm"><MeButton>CREATE YOUR DREAM CAR!</MeButton></Link></footer>
     </FooterContainer>
     </div>
   )

@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Landing from './components/Landing'
 import Show from './components/Show';
 import BrandProfile from './components/BrandProfile';
+import NewBrandForm from './components/NewBrandForm';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Route exact path="/" component={Landing}/>
         <Route exact path="/show" component={Show}/>
         <Route exact path="/show/brand/:brandId" component={BrandProfile} />
+        <Route exact path= "/newbrandform" component={NewBrandForm} />
         </Switch>
       </Router>
     );

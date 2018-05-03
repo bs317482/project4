@@ -37,7 +37,7 @@ class Landing extends Component {
     return (
         <MainLandingContainer>
           <header className="para" >Bernard's Car Collection</header>
-          <Link to="/show"><MyButton>Welcome </MyButton></ Link>
+          <Link to="/show"><MyButton>Welcome 🏁</MyButton></ Link>
       </MainLandingContainer>
     )
   }
