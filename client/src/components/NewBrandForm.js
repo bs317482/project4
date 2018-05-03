@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
  import  styled from 'styled-components'
+ import axios from 'axios'
 
  const Create = styled.div`
  text-align: center;
@@ -19,16 +20,45 @@ import { Redirect } from 'react-router-dom'
 
  `
 
+
 class NewBrandForm extends Component {
+    state = {
+        name: '',
+        picture: '',
+        isBrandCreated: false
+    }
+
+    handleChange = (event) => {
+        const name = event.target.name
+        const newState = {...this.state}
+        newState[name] = event.target.value
+        this.setState(newState)
+    }
+
+    handleSubmit = async (event) => {
+        event.preventDefault()
+        console.log("handle submit works")
+        const payload = {
+          name: this.state.name,
+          picture: this.state.picture
+        }
+        console.log('Payload from new brand: ', payload)
+        await axios.post('/api/brands/', payload)
+        await this.setState({isBrandCreated: true})
+      }
+
+
  render(){
+     if(this.state.isBrandCreated) return (<Redirect to={'/show'} />)
  return (
      <Create>
      <div>
          <Texter>
-<input placeholder="Brand" />
-<input placeholder="Model" />
-<input placeholder="Features" />
-<button>New Car 🚘 </button>
+         <form onSubmit={this.handleSubmit}>
+            <input onChange={this.handleChange} placeholder="Brand Name" name="name"  />
+            <input onChange={this.handleChange} placeholder="Picture" name="picture" />
+            <input type='submit' value= "New Car 🚘"/>
+        </form>
 <h1>What's In Your Car Vault?</h1>
 </Texter>
 </div>

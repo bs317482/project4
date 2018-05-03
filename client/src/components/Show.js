@@ -56,7 +56,7 @@ class Show extends Component {
     })
   }
 
-  // createBrand =() => {
+  //  createBrand =() => {
 
 
   // }

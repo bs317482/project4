@@ -9,5 +9,14 @@ router.get('/', (req, res) => {
     })
     .catch((err) => console.log(err))
 })
-
+// router.post('/', async (req, res) => {
+//     try {
+//       const newModels = req.body
+//       const savedModels = await Models.create(newModels)
+//       res.json(savedModels)
+//     } catch (err) {
+//       console.log(err)
+//       res.status(500).json(err)
+//     }
+//   })
 module.exports= router

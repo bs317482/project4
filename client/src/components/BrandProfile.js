@@ -16,7 +16,7 @@ class BrandProfile extends Component {
                 this.setState({
                     brand: response.data,
                     models: response.data.models
-                    
+
                 })
             })
     }
@@ -33,17 +33,18 @@ class BrandProfile extends Component {
             return (
                 <div>
                     <div>{model.name}
-                    {model.year}
+                        {model.year}
                     </div>
                     {features}
                 </div>
             )
         })
 
-return (
+        return (
             <div>
                 <p>{this.state.brand.name}</p>
                 {modeler}
+                
             </div>
         )
     }
