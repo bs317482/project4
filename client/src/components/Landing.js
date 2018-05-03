@@ -9,6 +9,7 @@ background-color: rgb(21, 141, 165);
 border: 1px solid black;
 height: 100vh;
 width: 100vw;
+box-shadow: inset 0 0 5em 1em #000;
 ` 
 const MyButton = styled.button`
 position: absolute;

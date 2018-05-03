@@ -11,7 +11,10 @@ height: 30.5vh;
 width: 100vw;
 font-size:40px;
 font-family: cursive;
-.circle:hover
+box-shadow: inset 0 0 5em 1em #000;
+text-align: center;
+text-decoration-color: black;
+:hover
 {
         border-radius:50%;
 }
