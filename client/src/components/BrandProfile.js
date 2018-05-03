@@ -7,7 +7,7 @@ class BrandProfile extends Component {
     state = {
         brand: {},
         models: []
-    }
+    };
     componentDidMount() {
         console.log('Lamborghini')
         const { brandId } = this.props.match.params
@@ -20,6 +20,13 @@ class BrandProfile extends Component {
                 })
             })
     }
+    deleteIdea = (brandsId) => {
+        axios.delete(`/api/brands/${this.state.brands._id}/brands/${brandsId}`)
+          .then((response) => {
+            console.log(response)
+          })
+      }
+  
     render() {
         const modeler = this.state.models.map((model) => {
             console.log("Model features", model.features)
@@ -43,8 +50,13 @@ class BrandProfile extends Component {
         return (
             <div>
                 <p>{this.state.brand.name}</p>
+                <p>{this.state.brand.picture}</p>
                 {modeler}
-                
+                <button>
+                onClick={() => { this.deleteBrand(brands._id) }}
+                    Delete this Profile
+                    </button>
+                <button>Edit</button>
             </div>
         )
     }

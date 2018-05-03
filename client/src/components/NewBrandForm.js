@@ -40,7 +40,7 @@ class NewBrandForm extends Component {
         console.log("handle submit works")
         const payload = {
           name: this.state.name,
-          picture: this.state.picture
+          picture: this.state.picture,
         }
         console.log('Payload from new brand: ', payload)
         await axios.post('/api/brands/', payload)
@@ -55,7 +55,7 @@ class NewBrandForm extends Component {
      <div>
          <Texter>
          <form onSubmit={this.handleSubmit}>
-            <input onChange={this.handleChange} placeholder="Brand Name" name="name"  />
+            <input onChange={this.handleChange} placeholder="Brand" name="name"  />
             <input onChange={this.handleChange} placeholder="Picture" name="picture" />
             <input type='submit' value= "New Car 🚘"/>
         </form>

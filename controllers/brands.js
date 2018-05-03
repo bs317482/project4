@@ -20,9 +20,9 @@ router.get('/:brandId', (req, res) => {
   
   router.post('/', async (req, res) => {
     try {
-      const newBrand = req.body
-      const savedBrand = await Brands.create(newBrand)
-      res.json(savedBrand)
+      const newBrands = req.body
+      const savedBrands = await Brands.create(newBrands)
+      res.json(savedBrands)
     } catch (err) {
       console.log(err)
       res.status(500).json(err)
