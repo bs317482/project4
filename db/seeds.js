@@ -19,8 +19,7 @@ const zoom = new Models({
 })
 const lamb = new Brands({
   name: 'Lamborghini 🇮🇹 ',
-  picture: <img src="https://media1.giphy.com/media/XreQmk7ETCak0/200w.gif" alt="thumbs up"/>
- 
+  picture: ""
 })
 
 const fast = new Features({
@@ -54,7 +53,7 @@ const fast = new Features({
   })
   const mclaren = new Brands({
     name: 'McLaren 🇬🇧 ',
-    picture: 'spaceiscool'
+    picture: ''
   })
 
 zoom.features.push(vroom)
