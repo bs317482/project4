@@ -4,6 +4,12 @@ import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
 
+const AllContainer = styled.body`
+ background-color: rgb(21, 141, 165);
+ box-shadow: inset 0 0 5em 1em #000;
+
+`
+
 const ProfileContainer = styled.div`
  background-color: rgb(21, 141, 165);
 border: 5px solid black;
@@ -66,11 +72,13 @@ class BrandProfile extends Component {
                     <div>
                         <div>{feature.title}</div>
                         <div>{feature.description}</div>
+                        
                     </div> 
                     )
             })
             return (
                 <div>
+                    <AllContainer>
                     <div>
                     <ProfileContainer>
                     {model.name}
@@ -80,6 +88,7 @@ class BrandProfile extends Component {
                     <ProfileContainer>
                     {features}
                     </ProfileContainer>
+                    </AllContainer>
                 </div>
 
             )
@@ -87,10 +96,13 @@ class BrandProfile extends Component {
 
         return (
             <div>
+                <AllContainer>
                 <ProfileContainer>
                 <p>{this.state.brand.name}</p>
-                <p>{this.state.brand.picture}</p>
                 {modeler}
+                <ProfileContainer>
+                <img src = {this.state.brand.picture}/>
+                </ProfileContainer>
                 <button
                 onClick={() => { this.deleteBrand(this.state.brand._id) }}>
                     Delete this Profile
@@ -102,6 +114,7 @@ class BrandProfile extends Component {
                     </button>
                     </form>
                     </ProfileContainer>
+                    </AllContainer>
             </div>
         )
     }

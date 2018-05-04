@@ -19,7 +19,7 @@ const zoom = new Models({
 })
 const lamb = new Brands({
   name: 'Lamborghini 🇮🇹 ',
-  picture: ""
+  picture: "https://media.giphy.com/media/1xVfBv3qjTzSqK6WKB/giphy.gif"
 })
 
 const fast = new Features({
@@ -36,7 +36,7 @@ const fast = new Features({
   })
   const koen = new Brands({
     name: 'Koenigsegg 🇸🇪 ',
-    picture: ''
+    picture: "https://media.giphy.com/media/1wQdHS65yYWavjIKoi/giphy.gif"
   })
 
   const euro = new Features({
@@ -53,7 +53,7 @@ const fast = new Features({
   })
   const mclaren = new Brands({
     name: 'McLaren 🇬🇧 ',
-    picture: ''
+    picture: "https://media.giphy.com/media/dCCyE3k6zy2AkMNAFL/giphy.gif"
   })
 
 zoom.features.push(vroom)
