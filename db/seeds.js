@@ -19,7 +19,7 @@ const zoom = new Models({
 })
 const lamb = new Brands({
   name: 'Lamborghini 🇮🇹 ',
-  picture:<img className="img-responsive" src={require("https://media.giphy.com/media/1xVfBv3qjTzSqK6WKB/giphy.gif")} alt="logo"/>
+  picture: ''
  
 })
 
