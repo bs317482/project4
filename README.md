@@ -1,18 +1,34 @@
 # Project-3
 
-#Connect4
-Project #1 game Here i have my connect four game its amazing and unfinished but like anything with programming "t is it never finished" it goes on and gets better as the programmer gets better. this is a fun game made.
+#The Car Collection
+This a site that allows you to add some of your dream cars to mine
 #Technologies 
-What technologies did you use? jquery and bootstrap
-What was your greatest accomplishment? everything(making colors switch between even and odd clicks)
-What part of your project was the hardest for you?(creating the win soution)
-What would you like to see in the next version of your app?(a win solution)
-Which classmates helped you the most? Spence, Geo, Briana, Tyler and Me
+What technologies did you use? React and bootstrap
+What was your greatest accomplishment? 
+Fixing the little things along the way
+What part of your project was the hardest for you?(creating the "update method")
+What would you like to see in the next version of your app?(pictures, videos and css bubbles)
+Which classmates helped you the most? Everyone
 #bit ballon link
-http://upbeat-brown-df83f2.bitballoon.com/
+https://morning-sands-15314.herokuapp.com/show
 
 #Trello link
-https://trello.com/b/CcoIdxgX/connect-4-creation
+https://trello.com/b/R9NiHJMw/project-3
 
 #WireFrame
-https://imgur.com/a/oM1rS
+https://balsamiq.cloud/s7yge91/poefff3
+
+#ERD
+Brands
+  name
+  picture
+  *
+  Models
+    name
+    year
+*
+Features
+    title
+    description
+
+
