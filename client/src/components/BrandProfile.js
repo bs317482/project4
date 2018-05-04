@@ -4,6 +4,17 @@ import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
 
+const ProfileContainer = styled.div`
+ background-color: rgb(21, 141, 165);
+border: 5px solid black;
+height: 30.5vh;
+width: 100vw;
+font-size:40px;
+font-family: cursive;
+box-shadow: inset 0 0 5em 1em #000;
+text-align: center;
+text-decoration-color: black;
+`
 
 
 class BrandProfile extends Component {
@@ -60,10 +71,15 @@ class BrandProfile extends Component {
             })
             return (
                 <div>
-                    <div>{model.name}
+                    <div>
+                    <ProfileContainer>
+                    {model.name}
                         {model.year}
+                        </ProfileContainer>
                     </div>
+                    <ProfileContainer>
                     {features}
+                    </ProfileContainer>
                 </div>
 
             )
@@ -71,6 +87,7 @@ class BrandProfile extends Component {
 
         return (
             <div>
+                <ProfileContainer>
                 <p>{this.state.brand.name}</p>
                 <p>{this.state.brand.picture}</p>
                 {modeler}
@@ -84,6 +101,7 @@ class BrandProfile extends Component {
                     Edit
                     </button>
                     </form>
+                    </ProfileContainer>
             </div>
         )
     }
