@@ -10,6 +10,22 @@ const AllContainer = styled.body`
 
 `
 
+const PicContainer = styled.div`
+border-style: solid;
+border-width: 10px;
+border-color: rgb(21, 141, 165);
+box-shadow: inset 0 0 5em 1em #000;
+
+
+img {
+    padding: 20px;
+    border: 10px;
+    border-radius: 50%;
+    
+}
+
+`
+
 const ProfileContainer = styled.div`
  background-color: rgb(21, 141, 165);
 border: 5px solid black;
@@ -20,6 +36,7 @@ font-family: cursive;
 box-shadow: inset 0 0 5em 1em #000;
 text-align: center;
 text-decoration-color: black;
+border-radius: 25;
 `
 
 
@@ -52,6 +69,14 @@ class BrandProfile extends Component {
           })
 
       }
+
+      handleChange = (event) => {
+        const name = event.target.name
+        const brand = {...this.state.brand}
+        brand[name] = event.target.value
+        this.setState(brand)
+    }
+
       updateIdea = (brand) => {
         console.log("UPDATING brand IN DB")
         console.log("brand Id being Updated", this.state.user._id)
@@ -100,18 +125,17 @@ class BrandProfile extends Component {
                 <ProfileContainer>
                 <p>{this.state.brand.name}</p>
                 {modeler}
-                <ProfileContainer>
+                <PicContainer>
                 <img src = {this.state.brand.picture}/>
-                </ProfileContainer>
+                </PicContainer>
                 <button
                 onClick={() => { this.deleteBrand(this.state.brand._id) }}>
                     Delete this Profile
                     </button>
-                    <form>          
-                <button
-                    onclick={this.onEdit}>
-                    Edit
-                    </button>
+                    <form onSubmit={this.handleSubmit}>
+                        <input onChange={this.handleChange} placeholder="Brand" name="name"  value={this.state.brand.name}/>
+                        <input onChange={this.handleChange} placeholder="Picture" name="picture" value={this.state.brand.picture}/>
+                        <input type='submit' value= "New Car 🚘"/>
                     </form>
                     </ProfileContainer>
                     </AllContainer>

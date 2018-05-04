@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import NewBrandForm from './NewBrandForm';
 
 const ShowContainer = styled.div`
-background-color: rgb(21, 141, 165);
+background-image: url("https://cdn.wallpapersafari.com/92/91/vsQD78.jpg");
 border: 5px solid black;
 height: 30.5vh;
 width: 100vw;
@@ -19,10 +19,10 @@ text-decoration-color: black;
 {
         border-radius:50%;
 }
-` 
+`
 const FooterContainer = styled.div`
 
-` 
+`
 const MeButton = styled.button`
 background-color: rgb(21, 141, 165);
 width: 100vw;
@@ -42,19 +42,19 @@ font-size:30px;
 `
 
 class Show extends Component {
-    state = {
-      brands:[],
-    }
+  state = {
+    brands: [],
+  }
 
   componentDidMount() {
     console.log('MOUNTED')
     axios.get(`api/brands/`)
-    .then(response => {
-      console.log(response.data)
-      this.setState({
-        brands: response.data,
+      .then(response => {
+        console.log(response.data)
+        this.setState({
+          brands: response.data,
+        })
       })
-    })
   }
 
   //  createBrand =() => {
@@ -64,36 +64,37 @@ class Show extends Component {
 
   render() {
     console.log("rendered")
-    const brander =this.state.brands.map ((brand) => {
-    return (
-      <div>
-      <ShowContainer>
-      <div>
-      <Link to={`/show/brand/${brand._id}`}>
-      <p>{brand.name}</p>
-      </Link>
-      </div>
-      </ShowContainer>
-      </div>
-     
-      
+    const brander = this.state.brands.map((brand) => {
+      return (
 
-    )
-  })
-  return (
-    <div>
-        <Head>
-               <header>Custom Car Collection</header>
-               </Head>
+        <ShowContainer>
+          <div>
+            <Link to={`/show/brand/${brand._id}`}>
+              <p>{brand.name}</p>
+            </Link>
+          </div>
+          </ShowContainer>
 
-    {brander}
-    <FooterContainer>
-    <footer><Link to="/NewBrandForm"><MeButton>CREATE YOUR DREAM CAR!</MeButton></Link></footer>
-    </FooterContainer>
-    </div>
-  )
-  }
+
+
+
+          )
+        })
+        return (
+      <div>
+            <Head>
+              <header>Custom Car Collection</header>
+            </Head>
+
+            {brander}
+            <FooterContainer>
+              <footer><Link to="/NewBrandForm"><MeButton>CREATE YOUR DREAM CAR!</MeButton></Link></footer>
+            </FooterContainer>
+          </div>
+        
+      )
+    }
 }
 
 
-export default Show
+  export default Show
