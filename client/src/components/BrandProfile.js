@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { Redirect } from 'react-router-dom'
+import styled from 'styled-components'
+
 
 
 class BrandProfile extends Component {
     state = {
         brand: {},
-        models: []
+        models: [],
+        isBrandDeleted: false
+
     };
     componentDidMount() {
         console.log('Lamborghini')
@@ -26,19 +31,23 @@ class BrandProfile extends Component {
         axios.delete(`/api/brands/${this.state.brand._id}`)
           .then((response) => {
             console.log(response)
+            this.setState({isBrandDeleted: true})
+          })
+
+      }
+      updateIdea = (brand) => {
+        console.log("UPDATING brand IN DB")
+        console.log("brand Id being Updated", this.state.user._id)
+        axios.patch(`/api/brands/${this.state.brand._id}`, { brand })
+          .then(res => {
+            this.setState({ brand: res.data.brand})
           })
       }
 
-      updateBrand = (brand) => {
-        console.log("UPDATING IDEA IN DB")
-        console.log("User Id being Updated", this.state.brand._id)
-        axios.patch(`/api/brands/${this.state.brand._id}/ideas/${brand._id}`, { brand })
-          .then(res => {
-            this.setState({ brands: res.data.brands })
-          })
-      }
-  
+      
     render() {
+        if(this.state.isBrandDeleted) return (<Redirect to={'/show'} />)
+
         const modeler = this.state.models.map((model) => {
             console.log("Model features", model.features)
             const features = model.features.map((feature) => {
@@ -46,7 +55,8 @@ class BrandProfile extends Component {
                     <div>
                         <div>{feature.title}</div>
                         <div>{feature.description}</div>
-                    </div>)
+                    </div> 
+                    )
             })
             return (
                 <div>
@@ -55,6 +65,7 @@ class BrandProfile extends Component {
                     </div>
                     {features}
                 </div>
+
             )
         })
 
@@ -67,16 +78,18 @@ class BrandProfile extends Component {
                 onClick={() => { this.deleteBrand(this.state.brand._id) }}>
                     Delete this Profile
                     </button>
-                    <form>
-                <button>
+                    <form>          
+                <button
+                    onclick={this.onEdit}>
                     Edit
                     </button>
                     </form>
             </div>
         )
     }
+        
+    }        
 
-}
 
 
 

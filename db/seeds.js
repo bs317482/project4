@@ -19,7 +19,8 @@ const zoom = new Models({
 })
 const lamb = new Brands({
   name: 'Lamborghini 🇮🇹 ',
-  picture: 'spaceiscool'
+  picture:<img className="img-responsive" src={require("https://media.giphy.com/media/1xVfBv3qjTzSqK6WKB/giphy.gif")} alt="logo"/>
+ 
 })
 
 const fast = new Features({
@@ -36,7 +37,7 @@ const fast = new Features({
   })
   const koen = new Brands({
     name: 'Koenigsegg 🇸🇪 ',
-    picture: 'spaceiscool'
+    picture: ''
   })
 
   const euro = new Features({

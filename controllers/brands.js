@@ -47,7 +47,7 @@ router.get('/:brandId', (req, res) => {
   // update route
   router.put('/:id', async (req, res) => {
     try {
-      const patchId = req.params.id
+      const brandId = req.params.id
       const updatedBrand = req.body
       const savedBrands = await Brand.findByIdAndUpdate(brandId, updatedBrand)
       res.json(savedBrands)
