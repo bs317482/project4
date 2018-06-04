@@ -13,22 +13,21 @@ Which classmates helped you the most? Everyone
 https://morning-sands-15314.herokuapp.com/show
 
 #Trello link
-https://trello.com/b/R9NiHJMw/project-3
+https://trello.com/b/BPAWFRjA/project-4
 
 #WireFrame
 https://balsamiq.cloud/s7yge91/poefff3
 
 #ERD
-Brands
+food
   name
   picture
   *
-  Models
+  type
     name
-    year
+    nutrition
 *
-Features
-    title
+calories
     description
 
 

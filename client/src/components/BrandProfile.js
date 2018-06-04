@@ -30,15 +30,15 @@ img {
 
 const ProfileContainer = styled.div`
 background-image: url("https://previews.123rf.com/images/monticello/monticello1602/monticello160200044/52141462-composition-with-organic-food-isolated-on-white-background-balanced-diet.jpg");
-border: 5px solid black;
+/* border: 5px solid black; */
 height: 30.5vh;
 width: 100vw;
 font-size:40px;
 font-family: cursive;
-box-shadow: inset 0 0 5em 1em #000;
+/* box-shadow: inset 0 0 5em 1em #000; */
 text-align: center;
 text-decoration-color: black;
-border-radius: 25;
+/* border-radius: 25; */
 `
 
 
