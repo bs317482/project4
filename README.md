@@ -1,9 +1,9 @@
-#### Project-4
+######## Project-4
 
 #### Healthy Food
-This a site that allows you to find healthy foods
+This a site that allows you to find healthy foods suited for bodily and healthy improvements
 #### Technologies 
-##1 What technologies did you use? 
+## What technologies did you use? 
 React and bootstrap
 ##2 What was your greatest accomplishment? 
 Fixing the little things along the way
