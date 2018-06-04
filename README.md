@@ -3,9 +3,9 @@
 #### Healthy Food
 This a site that allows you to find healthy foods suited for bodily and healthy improvements
 #### Technologies 
-## What technologies did you use? 
+### What technologies did you use? 
 React and bootstrap
-##2 What was your greatest accomplishment? 
+###2 What was your greatest accomplishment? 
 Fixing the little things along the way
 ##3 What part of your project was the hardest for you?
 ("creating the "update method")
