@@ -80,12 +80,12 @@ class Show extends Component {
         return (
       <div>
             <Head>
-              <header>Custom Car Collection</header>
+              <header>Healthy foods</header>
             </Head>
 
             {brander}
             <FooterContainer>
-              <footer><Link to="/NewBrandForm"><MeButton>CREATE YOUR DREAM CAR!</MeButton></Link></footer>
+              <footer><Link to="/NewBrandForm"><MeButton>What's your dish?</MeButton></Link></footer>
             </FooterContainer>
           </div>
         
