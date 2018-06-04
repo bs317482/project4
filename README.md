@@ -1,7 +1,7 @@
-# Project-3
+# Project-4
 
-#The Car Collection
-This a site that allows you to add some of your dream cars to mine
+#Healthy Food
+This a site that allows you to find healthy foods
 #Technologies 
 What technologies did you use? React and bootstrap
 What was your greatest accomplishment? 
@@ -9,7 +9,7 @@ Fixing the little things along the way
 What part of your project was the hardest for you?(creating the "update method")
 What would you like to see in the next version of your app?(pictures, videos and css bubbles)
 Which classmates helped you the most? Everyone
-#bit ballon link
+#Heroku
 https://morning-sands-15314.herokuapp.com/show
 
 #Trello link

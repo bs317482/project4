@@ -137,7 +137,7 @@ class BrandProfile extends Component {
                     <form onSubmit={this.handleSubmit}>
                         <input onChange={this.handleChange} placeholder="Brand" name="name"  value={this.state.brand.name}/>
                         <input onChange={this.handleChange} placeholder="Picture" name="picture" value={this.state.brand.picture}/>
-                        <input type='submit' value= "New Car 🚘"/>
+                        <input type='submit' value= "New food"/>
                     </form>
                     </ProfileContainer>
                     </AllContainer>
