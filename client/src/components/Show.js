@@ -75,9 +75,6 @@ class Show extends Component {
           </div>
           </ShowContainer>
 
-
-
-
           )
         })
         return (

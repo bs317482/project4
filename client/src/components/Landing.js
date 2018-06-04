@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Show from './Show';
+// import Show from './Show';
 import {Link} from 'react-router-dom'
+import VideoRecord from './VideoRecord'
 
 
 const MainLandingContainer = styled.div`
@@ -9,11 +10,13 @@ const MainLandingContainer = styled.div`
 border: 1px solid black;
 height: 100vh;
 width: 100vw;
-box-shadow: inset 0 0 5em 1em #000;
-background-image: url("https://cdn.wallpapersafari.com/92/91/vsQD78.jpg");
+/* box-shadow: inset 0 0 5em 1em #000; */
+background-image: url("https://cdn.dribbble.com/users/45405/screenshots/2701866/galaxy800x600.gif");
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
+
+
 ` 
 const MyButton = styled.button`
 position: absolute;
@@ -21,17 +24,19 @@ position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
-    font-size: 16px;
-    padding: 16px 30px;
+    font-size: 96px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 1005px;
     text-align: center;
+    padding: 20px;
+    border: 10px;
+    border-radius: 50%;
+
+
     :hover {
-        background-color: black;
-    color: white;
+    box-shadow: white;
+    background-color:rgb(255, 77, 77);
     }
 `
 
@@ -41,8 +46,9 @@ class Landing extends Component {
   render() {
     return (
         <MainLandingContainer>
-          <header className="para" >Bernard's Car Collection</header>
-          <Link to="/show"><MyButton>Welcome 🏁</MyButton></ Link>
+          <header className="para" >Borndua</header>
+          <Link to="/videorecord"><MyButton></MyButton></ Link>
+
       </MainLandingContainer>
     )
   }
