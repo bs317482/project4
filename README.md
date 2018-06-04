@@ -1,27 +1,28 @@
 #### Project-4
 
-####Healthy Food
+#### Healthy Food
 This a site that allows you to find healthy foods
-####Technologies 
-##1.What technologies did you use? 
+#### Technologies 
+##1. What technologies did you use? 
 React and bootstrap
-##2.What was your greatest accomplishment? 
+##2. What was your greatest accomplishment? 
 Fixing the little things along the way
-##3.What part of your project was the hardest for you?
+##3. What part of your project was the hardest for you?
 ("creating the "update method")
-##4.What would you like to see in the next version of your app?
+##4. What would you like to see in the next version of your app?
 (pictures, videos and css bubbles)
-##5Which classmates helped you the most? Everyone
-##.##Heroku
+##5. Which classmates helped you the most? 
+Everyone
+### Heroku
 https://morning-sands-15314.herokuapp.com/show
 
-####Trello link
+#### Trello link
 https://trello.com/b/BPAWFRjA/project-4
 
-####WireFrame
+#### WireFrame
 https://balsamiq.cloud/s7yge91/poefff3
 
-####ERD
+#### ERD
 food
   name
   picture
