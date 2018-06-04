@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import NewBrandForm from './NewBrandForm';
 
 const ShowContainer = styled.div`
-background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/iPhone-6s-3D-Touch-technology-001.jpg");
+background-image: url("https://previews.123rf.com/images/monticello/monticello1602/monticello160200044/52141462-composition-with-organic-food-isolated-on-white-background-balanced-diet.jpg");
 /* border: 5px solid black; */
 height: 30.5vh;
 width: 100vw;
@@ -20,17 +20,19 @@ width: 100vw;
 height: 5.5vh;
 font-size:30px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/iPhone-6s-3D-Touch-technology-001.jpg");
+background-color: black;
 color: white;
-:hover {
-  background-color: green;  
-}
+height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  position: center;
 `
 const Head = styled.header`
 text-align: center;
 color: black;
 font-family: Luminari;
-background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/iPhone-6s-3D-Touch-technology-001.jpg");
+background-image: url("https://previews.123rf.com/images/monticello/monticello1602/monticello160200044/52141462-composition-with-organic-food-isolated-on-white-background-balanced-diet.jpg");
 font-size:30px;
 color: white;
 `

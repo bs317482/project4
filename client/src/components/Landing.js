@@ -11,7 +11,7 @@ border: 1px solid black;
 height: 100vh;
 width: 100vw;
 /* box-shadow: inset 0 0 5em 1em #000; */
-background-image: url("https://cdn.dribbble.com/users/45405/screenshots/2701866/galaxy800x600.gif");
+background-image: url("https://media.giphy.com/media/2A1IfXf8aFo1doWYrE/giphy.gif");
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
@@ -46,8 +46,8 @@ class Landing extends Component {
   render() {
     return (
         <MainLandingContainer>
-          <header className="para" >Borndua</header>
-          <Link to="/videorecord"><MyButton></MyButton></ Link>
+          <header className="para" >COME EAT !</header>
+          <Link to="/show"><MyButton></MyButton></ Link>
 
       </MainLandingContainer>
     )
