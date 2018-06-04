@@ -6,17 +6,21 @@ import { Redirect } from 'react-router-dom'
  const Create = styled.div`
  text-align: center;
  position: absolute;
- width: 1445px; 
- height: 800px;
+ width: 400vh; 
+ height: 100vw;
     box-shadow: inset 0 0 5em 1em #000;
-    background: url("https://i.imgur.com/JPdEhGB.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("https://i.ytimg.com/vi/mcsTWPSMDtg/maxresdefault.jpg");
 }
  `
- const Texter = styled.div`
- position: absolute;
+    const Texter = styled.div`
+    position: absolute;
+     opacity: 0.9;
     left: 480px;
     top: 300px;
-   :-ms-input-placeholder:105px;
+    box-sizing: border-box;
+    border: none;
 
  `
 
@@ -55,11 +59,11 @@ class NewBrandForm extends Component {
      <div>
          <Texter>
          <form onSubmit={this.handleSubmit}>
-            <input onChange={this.handleChange} placeholder="Brand" name="name"  />
+            <input onChange={this.handleChange} placeholder="Food" name="name"  />
             <input onChange={this.handleChange} placeholder="Picture" name="picture" />
-            <input type='submit' value= "New Car 🚘"/>
+            <input type='submit' value= "New Food "/>
         </form>
-<h1>What's In Your Car Vault?</h1>
+<h1>Eat Healthy today!</h1>
 </Texter>
 </div>
   </Create>

@@ -5,30 +5,23 @@ import styled from 'styled-components'
 import NewBrandForm from './NewBrandForm';
 
 const ShowContainer = styled.div`
-background-image: url("https://cdn.wallpapersafari.com/92/91/vsQD78.jpg");
-border: 5px solid black;
+background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/iPhone-6s-3D-Touch-technology-001.jpg");
+/* border: 5px solid black; */
 height: 30.5vh;
 width: 100vw;
 font-size:40px;
-font-family: cursive;
-box-shadow: inset 0 0 5em 1em #000;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 text-align: center;
-text-decoration-color: black;
+text-decoration-color: white;
+ `
 
-:hover
-{
-        border-radius:50%;
-}
-`
-const FooterContainer = styled.div`
-
-`
 const MeButton = styled.button`
-background-color: rgb(21, 141, 165);
 width: 100vw;
 height: 5.5vh;
 font-size:30px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/iPhone-6s-3D-Touch-technology-001.jpg");
+color: white;
 :hover {
   background-color: green;  
 }
@@ -37,8 +30,9 @@ const Head = styled.header`
 text-align: center;
 color: black;
 font-family: Luminari;
-background-color:rgb(21, 141, 165);
+background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/09/iPhone-6s-3D-Touch-technology-001.jpg");
 font-size:30px;
+color: white;
 `
 
 class Show extends Component {
@@ -84,9 +78,7 @@ class Show extends Component {
             </Head>
 
             {brander}
-            <FooterContainer>
-              <footer><Link to="/NewBrandForm"><MeButton>What's your dish?</MeButton></Link></footer>
-            </FooterContainer>
+              <Link to="/NewBrandForm"><MeButton>What's your dish?</MeButton></Link>
           </div>
         
       )
