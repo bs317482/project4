@@ -23,15 +23,15 @@ https://trello.com/b/BPAWFRjA/project-4
 https://balsamiq.cloud/s7yge91/poefff3
 
 ### ERD
-food
+### food
   name
   picture
   *
-  type
+  ### type
     name
     nutrition
 *
-calories
+### calories
     description
 
 
