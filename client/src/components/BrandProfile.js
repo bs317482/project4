@@ -5,7 +5,8 @@ import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
 
 const AllContainer = styled.body`
- background-color: rgb(21, 141, 165);
+ background-image: url("https://previews.123rf.com/images/monticello/monticello1602/monticello160200044/52141462-composition-with-organic-food-isolated-on-white-background-balanced-diet.jpg");
+;
  box-shadow: inset 0 0 5em 1em #000;
 
 `
@@ -13,7 +14,8 @@ const AllContainer = styled.body`
 const PicContainer = styled.div`
 border-style: solid;
 border-width: 10px;
-border-color: rgb(21, 141, 165);
+background-image: url("https://previews.123rf.com/images/monticello/monticello1602/monticello160200044/52141462-composition-with-organic-food-isolated-on-white-background-balanced-diet.jpg");
+;
 box-shadow: inset 0 0 5em 1em #000;
 
 
@@ -27,7 +29,7 @@ img {
 `
 
 const ProfileContainer = styled.div`
- background-color: rgb(21, 141, 165);
+background-image: url("https://previews.123rf.com/images/monticello/monticello1602/monticello160200044/52141462-composition-with-organic-food-isolated-on-white-background-balanced-diet.jpg");
 border: 5px solid black;
 height: 30.5vh;
 width: 100vw;

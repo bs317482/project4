@@ -53,7 +53,7 @@ const fast = new Features({
   })
   const mclaren = new Brands({
     name: 'Fresh Fish',
-    picture: "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/6-cormerantfish.jpg"
+    picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtQShzLWyD-fW3_p3L6RJafznTtMGOk0xouT5IumzjZtD3vrL6"
   })
 
 zoom.features.push(vroom)
