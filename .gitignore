@@ -1,1 +1,6 @@
 /node_modules
+
+/client
+/controllers
+/db
+server.js

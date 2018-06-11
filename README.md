@@ -14,7 +14,7 @@ Fixing the little things along the way
 ### Which classmates helped you the most? 
 Everyone
 ### Heroku
-https://morning-sands-15314.herokuapp.com/show
+
 
 ### Trello link
 https://trello.com/b/BPAWFRjA/project-4
